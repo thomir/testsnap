@@ -11,6 +11,14 @@ grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
 
 parts:
-  my-part:
-    # See 'snapcraft plugins'
+  my-nil-part:
     plugin: nil
+
+  my-tagged-part:
+    source: https://github.com/thomir/testtools.git
+    source-tag: testtools-0.9.32
+
+  my-branched-part:
+    source: https://github.com/thomir/symposion.git
+    source-branch: new-schedule
+
